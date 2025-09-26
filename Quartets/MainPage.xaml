@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:Quartets.Models"
+             xmlns:vm="clr-namespace:Quartets.ViewModels"
+             x:Class="Quartets.MainPage"
+             x:DataType="vm:MainPageVM">
+
+    <VerticalStackLayout>
+        <Entry Placeholder="{x:Static m:Strings.Name}" Text="{Binding Name}"/>
+       
+        <Button Text="{x:Static m:Strings.Register}" Command="{Binding RegisterCommand}"/>  
+    </VerticalStackLayout>
+
+</ContentPage>
