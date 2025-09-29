@@ -1,9 +1,18 @@
-﻿namespace Quartets.Models
+﻿using Quartets.ModelsLogic;
+
+namespace Quartets.Models
 {
-    internal abstract class UserModel
+    internal abstract class UserModels
     {
-        public bool IsRegistered => !string.IsNullOrWhiteSpace(Name);
-        public string Name { get; set; }=string.Empty;
+        protected FbData fbData = new();
+        public string UserName { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Age { get; set; } = string.Empty;
         public abstract void Register();
+        public abstract void Login();
+        public abstract bool CanLogin();
+        public abstract bool CanRegister();
+        public bool IsRegistered => (!string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password) && !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Age));
     }
 }

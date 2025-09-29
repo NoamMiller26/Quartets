@@ -6,10 +6,5 @@
              x:Class="Quartets.MainPage"
              x:DataType="vm:MainPageVM">
 
-    <VerticalStackLayout>
-        <Entry Placeholder="{x:Static m:Strings.Name}" Text="{Binding Name}"/>
-       
-        <Button Text="{x:Static m:Strings.Register}" Command="{Binding RegisterCommand}"/>  
-    </VerticalStackLayout>
-
+    
 </ContentPage>

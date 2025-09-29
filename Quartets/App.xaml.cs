@@ -1,4 +1,5 @@
-﻿using Quartets.ModelLogic;
+﻿using Quartets.ModelsLogic;
+using Quartets.ModelsLogic;
 using Quartets.Views;
 
 
@@ -10,8 +11,8 @@ namespace Quartets
         {
             InitializeComponent();
             User user = new();
-            Page page= user.IsRegistered ? new LoginPage() : new AppShell();
-            MainPage = new AppShell();
+            Page page= user.IsRegistered ? new LoginPage() : new RegisterPage();
+            MainPage = page;
         }
     }
 }
