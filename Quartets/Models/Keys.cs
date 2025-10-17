@@ -8,6 +8,7 @@ namespace Quartets.Models
         public const string PasswordNameKey = "Password";
         public const string EmailNameKey = "Email";
         public const string AgeNameKey = "Age";
-        public const string FbAPIKey = "AIzaSyCrkTujFohYmfmPAIMFWxz44q-Ei_XYrmY";
+        public const string FbApiKey = "AIzaSyCrkTujFohYmfmPAIMFWxz44q-Ei_XYrmY";
+        public const string FbAppDomailKey = "Quartets-416af.firebaseapp.com";
     }
 }

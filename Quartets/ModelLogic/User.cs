@@ -1,6 +1,5 @@
 ﻿
 using Quartets.Models;
-using Quartets.Models;
 
 namespace Quartets.ModelsLogic
 {

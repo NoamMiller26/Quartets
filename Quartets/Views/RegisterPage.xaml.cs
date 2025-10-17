@@ -6,6 +6,7 @@
         public RegisterPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModels.RegisterPageVM();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Quartets.ModelsLogic;
 using Quartets.Models;
-using Quartets.ModelsLogic;
 using System.Windows.Input;
 
 namespace Quartets.ViewModels
