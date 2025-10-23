@@ -4,8 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:m="clr-namespace:Quartets.Models"
              xmlns:vm="clr-namespace:Quartets.ViewModels"
-             x:Class="Quartets.MainPage"
-             x:DataType="vm:LoginPagVM">
+             x:Class="Quartets.Views.LoginPage"
+             x:DataType="vm:LoginPageVM">
     <VerticalStackLayout 
         Padding="30"
         Spacing="25"

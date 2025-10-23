@@ -1,11 +1,10 @@
 ﻿using Quartets.ModelsLogic;
 using Quartets.Models;
-using Quartets.ModelsLogic;
 using System.Windows.Input;
 
 namespace Quartets.ViewModels
 {
-    internal partial class LoginPagVM : ObservableObject
+    internal partial class LoginPageVM : ObservableObject
     {
         public ICommand ToggleIsPasswordCommand { get; }
         public bool IsPassword { get; set; } = true;
@@ -16,7 +15,7 @@ namespace Quartets.ViewModels
             return user.CanLogin();
         }
 
-        public LoginPagVM()
+        public LoginPageVM()
         {
             LoginCommand = new Command(Login, CanLogin);
             ToggleIsPasswordCommand = new Command(ToggleIsPassword);

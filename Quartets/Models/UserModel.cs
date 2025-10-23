@@ -4,7 +4,9 @@ namespace Quartets.Models
 {
     internal abstract class UserModels
     {
-        protected FbData fbData = new();
+        protected FBData fbd = new();
+        public EventHandler? OnAuthCompleted;
+        protected FBData fbData = new();
         public string UserName { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
@@ -13,6 +15,8 @@ namespace Quartets.Models
         public abstract void Login();
         public abstract bool CanLogin();
         public abstract bool CanRegister();
+        public abstract string GetFirebaseErrorMessage(string msg);
+        public bool IsBusy { get; protected set; } = false;
         public bool IsRegistered => (!string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password) && !string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Age));
     }
 }

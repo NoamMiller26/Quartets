@@ -1,5 +1,4 @@
 ﻿using Quartets.ModelsLogic;
-using Quartets.ModelsLogic;
 using Quartets.Views;
 
 

@@ -1,11 +1,12 @@
-﻿namespace Quartets.Views
+using Quartets.ViewModels;
+
+namespace Quartets.Views;
+
+public partial class RegisterPage : ContentPage
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegisterPage : ContentPage
-    {
-        public RegisterPage()
-        {
-            InitializeComponent();
-        }
+	public RegisterPage()
+	{
+		InitializeComponent();
+        BindingContext = new RegisterPageVM();
     }
 }
