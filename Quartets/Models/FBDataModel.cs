@@ -10,7 +10,7 @@ namespace Quartets.Models
         protected IFirestore fdb;
         public abstract string DisplayName { get; }
         public abstract string UserId { get; }
-        public abstract string GetErrorMessage(string errMessage);
+       
         public abstract void CreateUserWithEmailAndPasswordAsync(string email, string password, string name, Action<System.Threading.Tasks.Task> OnComplete);
         public abstract void SignInWithEmailAndPasswordAsync(string email, string password, Action<System.Threading.Tasks.Task> OnComplete);
         public FbDataModel()

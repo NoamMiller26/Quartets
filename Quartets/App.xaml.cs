@@ -10,7 +10,7 @@ namespace Quartets
         {
             InitializeComponent();
             User user = new();
-            Page page= user.IsRegistered ? new LoginPage() : new RegisterPage();
+            Page page = user.IsRegistered ? new LoginPage() : new RegisterPage();
             MainPage = page;
         }
     }

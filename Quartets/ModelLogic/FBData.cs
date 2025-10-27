@@ -16,10 +16,7 @@ namespace Quartets.ModelsLogic
             await facl.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(OnComplete);
         }
 
-        public override string GetErrorMessage(string errMessage)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public override string DisplayName
         {
